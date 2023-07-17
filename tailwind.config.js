@@ -10,7 +10,8 @@ module.exports = {
       fontFamily: {
         'inter': ['Inter', 'sans-serif'],
         'sora': ['Sora', 'serif'],
-      }, fontSize: {
+      },
+      fontSize: {
         'h1': ['96px', '104px'],
         'h2': ['64px', 'auto'],
         'h3-inter': ['48px', '56px'],
@@ -42,6 +43,7 @@ module.exports = {
         '425': '40px',
         '450': '48px',
         '500': '64px',
+        '575': '100px',
         '600': '128px',
         '625': '160px',
       },
