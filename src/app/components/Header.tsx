@@ -8,8 +8,8 @@ const Header = () => {
           self-center
           justify-between
           items-center
-          mt-500
-          xl:px-[130px]
+          w-4/5
+          mt-5
         ">
       {/* Right Side */}
       <a href='#'>
@@ -23,9 +23,9 @@ const Header = () => {
       </a>
       {/* Left Side */}
       <div className='flex gap-9 justify-between items-center text-p-d18'>
-        <a href='#' className="">Home</a>
-        <a href='#' className="">Projects</a>
-        <a href='#' className="">About</a>
+        <a href='#home' className="">Home</a>
+        <a href='#projects' className="">Projects</a>
+        <a href='#about-me' className="">About</a>
         <a href='#' className="">Resume</a>
         <button>
           <Image

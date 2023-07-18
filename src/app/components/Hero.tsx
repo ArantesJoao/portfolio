@@ -21,7 +21,7 @@ const Hero = () => {
 
   return (
     <Container>
-      <div className="flex flex-col gap-8 mt-625 items-center">
+      <div id="hero" className="flex flex-col gap-8 items-center">
         <p
           className={
             `${sora.className}

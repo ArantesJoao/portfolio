@@ -1,10 +1,24 @@
+"use client"
+
 import Image from "next/image";
 import Container from "./Container";
 
 const Scroll = () => {
+  const scrollUp = () => {
+    const projectsSession = document.querySelector("#projects");
+
+    if (projectsSession !== null) {
+      const topPos = projectsSession.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({
+        top: topPos,
+        behavior: "smooth"
+      });
+    }
+  }
+
   return (
     <Container>
-      <a href="#" className="flex flex-col mt-625 items-center">
+      <div onClick={scrollUp}>
         <div className="text-neutral-500">Scroll</div>
         <Image
           src="assets/arrow_down.svg"
@@ -13,7 +27,7 @@ const Scroll = () => {
           height={44}
           priority
         />
-      </a>
+      </div>
     </Container>
   );
 }

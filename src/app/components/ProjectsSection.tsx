@@ -7,13 +7,14 @@ const sora = Sora({ subsets: ['latin'] })
 const ProjectsSession = () => {
   return (
     <Container>
-      <div className="flex flex-col mt-625 items-center">
+      <div id="projects" className="flex flex-col items-center pt-[5%]">
         <p
           className={`
             ${sora.className}
             text-h3-sora
             font-bold
-            text-neutral-800 mb-575
+            text-neutral-800\
+            mb-450
           `}>
           Projects
         </p>
