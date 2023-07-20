@@ -39,12 +39,12 @@ const ProjectsSession = () => {
 
           <ProjectCard
             title="Portfolio"
-            description="My portfolio listed in my portfolio. I'm trying to think of a Inception joke here."
-            imageUrl="https://raw.githubusercontent.com/ArantesJoao/portfolio/main/.github/initial_screen.png?token=GHSAT0AAAAAACE53QFR74BJDZ2VNNP6IURYZFWUMMQ"
+            description="My portfolio listed in my portfolio. I'm trying to think of an Inception joke here."
+            imageUrl="https://github.com/ArantesJoao/portfolio/blob/main/.github/initial_screen.png"
             technologies={['react', 'next', 'tailwind', 'vercel']}
             hasLiveDemo
             gitHubUrl="https://github.com/ArantesJoao/portfolio"
-            liveDemoUrl="https://rent-website-clone-arantes.vercel.app"
+            liveDemoUrl="https://portfolio-arantesjoao.vercel.app"
           />
         </div>
       </div>
