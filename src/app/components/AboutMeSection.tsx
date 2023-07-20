@@ -31,10 +31,10 @@ const AboutMeSection = () => {
   return (
     <Container>
       <div id="about-me"
-        className="flex items-center justify-center h-screen
+        className="flex items-center justify-center mb-[5%] pt-24 sm:mt-0
       ">
-        <div className="grid grid-cols-2">
-          <div className="col-span-1 pr-24">
+        <div className="grid grid-cols-1 lg:grid-cols-2">
+          <div className="col-span-1 md:pr-24">
             <p className={
               `${sora.className}
             text-h4-sora
@@ -42,11 +42,22 @@ const AboutMeSection = () => {
             text-black
             mb-400
           `}>Hey there!</p>
-            <p className="text-p-r24">I'm a full-stack developer with three years of real-world professional experience and a deep love for frontend work. I'm finishing up my Information Systems degree at the Federal University of Santa Catarina in August, a journey that has further honed my coding skills.</p>
+            <p className="lg:text-p-r24 text-lg">I'm a full-stack developer with three years of real-world professional experience and a deep love for frontend work. I'm finishing up my Information Systems degree at the Federal University of Santa Catarina in August, a journey that has further honed my coding skills.</p>
             <br />
-            <p className="text-p-r24">In my professional life, I work with C# on the backend and a variety of JavaScript frameworks on the frontend. But I truly enjoy working with React, Next and Node.js the most. This portfolio, that was developed based on <a className="underline" target="_blank" href="https://www.figma.com/community/file/1257703789860932527">this project I discovered in the Figma community</a> (thank you to whom designed it!), is a showcase of my projects, demonstrating a little bit of what I've learned so far and what I can bring to your team. I'm excited about the future and ready to take on new challenges in web development.</p>
+            <p className="lg:text-p-r24 text-lg">In my professional life, I work with C# on the backend and a variety of JavaScript frameworks on the frontend. But I truly enjoy working with React, Next and Node.js the most. This portfolio, that was developed based on <a className="underline" target="_blank" href="https://www.figma.com/community/file/1257703789860932527">this project I discovered in the Figma community</a> (thank you to whom designed it!), is a showcase of my projects, demonstrating a little bit of what I've learned so far and what I can bring to your team. I'm excited about the future and ready to take on new challenges in web development.</p>
           </div>
-          <div className="flex flex-col justify-between my-[10%] col-span-1">
+          <div
+            className="
+              flex
+              flex-col
+              justify-between
+              my-[10%]
+              col-span-1
+              sm:justify-normal
+              md:justify-normal
+              sm:gap-32
+              md:gap-16
+            ">
             <div>
               <p className={
                 `${sora.className}
@@ -54,7 +65,9 @@ const AboutMeSection = () => {
                 font-bold
                 text-black
                 flex
-                justify-center
+                lg:justify-center
+                lg:text-center
+                mt-8
                 mb-400
             `}>Languages and Frameworks</p>
               <div
@@ -62,9 +75,9 @@ const AboutMeSection = () => {
                   flex
                   flex-row
                   gap-10
-                  justify-center
+                  lg:justify-center
                   flex-wrap
-                  px-[5%]
+                  lg:px-[5%]
                 ">
                 <div>
                   <div className="flex flex-col gap-2 items-center">
@@ -130,17 +143,19 @@ const AboutMeSection = () => {
                 font-bold
                 text-black
                 flex
-                justify-center
+                lg:justify-center
                 mb-400
+                mt-8
+                sm:mt-0
             `}>Tools</p>
               <div
                 className="
                   flex
                   flex-row
                   gap-10
-                  justify-center
+                  lg:justify-center
                   flex-wrap
-                  px-[5%]
+                  lg:px-[5%]
                 ">
                 <TechCard
                   color="#027ACC"

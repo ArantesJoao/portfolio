@@ -2,23 +2,12 @@
 
 import Image from "next/image";
 import Container from "./Container";
+import scrollTo from "@/utils";
 
 const Scroll = () => {
-  const scrollUp = () => {
-    const projectsSession = document.querySelector("#projects");
-
-    if (projectsSession !== null) {
-      const topPos = projectsSession.getBoundingClientRect().top + window.scrollY;
-      window.scrollTo({
-        top: topPos,
-        behavior: "smooth"
-      });
-    }
-  }
-
   return (
     <Container>
-      <div onClick={scrollUp}>
+      <div className="mt-16 md:mt-0 cursor-pointer animate-bounce" onClick={() => scrollTo('projects')}>
         <div className="text-neutral-500">Scroll</div>
         <Image
           src="assets/arrow_down.svg"

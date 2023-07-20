@@ -7,7 +7,7 @@ const sora = Sora({ subsets: ['latin'] })
 const ProjectsSession = () => {
   return (
     <Container>
-      <div id="projects" className="flex flex-col items-center pt-[5%]">
+      <div id="projects" className="flex flex-col items-center pt-24 sm:mt-0">
         <p
           className={`
             ${sora.className}
@@ -21,32 +21,30 @@ const ProjectsSession = () => {
         <div className="flex flex-row flex-wrap gap-16 justify-center">
           <ProjectCard
             title="Wild.io"
-            description="Final college project. Very nice app."
+            description="This was my final college project! It fosters public engagement with city parks, encouraging the documentation of urban flora and fauna."
             imageUrl="https://raw.githubusercontent.com/ArantesJoao/wild.io/main/.github/wild-io-banner.png"
             technologies={['react-native', 'nodejs']}
+            gitHubUrl="https://github.com/ArantesJoao/wild.io"
           />
 
           <ProjectCard
             title="Airbnb clone"
-            description="Airbnb clone. Showcase skills lorem ipsum dolor sit amet, consectetur adipiscing elit sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliqu"
+            description="Airbnb clone I coded to showcase skills some of my full stack skills. It was also one of my first projects using Next 13."
             imageUrl="https://raw.githubusercontent.com/ArantesJoao/airbnb-clone/main/.github/airbnb_clone_banner.png"
             technologies={['react', 'next', 'tailwind', 'vercel', 'nodejs']}
             hasLiveDemo
+            gitHubUrl="https://github.com/ArantesJoao/airbnb-clone"
+            liveDemoUrl="https://rent-website-clone-arantes.vercel.app"
           />
 
           <ProjectCard
-            title="Filler"
-            description="Just to occupy space temporarily."
-            imageUrl="https://raw.githubusercontent.com/ArantesJoao/airbnb-clone/main/.github/airbnb_clone_banner.png"
-            technologies={['react', 'next', 'tailwind', 'vercel', 'nodejs']}
+            title="Portfolio"
+            description="My portfolio listed in my portfolio. I'm trying to think of a Inception joke here."
+            imageUrl="https://raw.githubusercontent.com/ArantesJoao/portfolio/main/.github/initial_screen.png?token=GHSAT0AAAAAACE53QFR74BJDZ2VNNP6IURYZFWUMMQ"
+            technologies={['react', 'next', 'tailwind', 'vercel']}
             hasLiveDemo
-          />
-
-          <ProjectCard
-            title="Filler 2"
-            description="Just to occupy space temporarily. But using more space to test the spacing under each project card! Making sure everything is fully responsive and won't leave any weird unwanted gaps."
-            imageUrl="https://raw.githubusercontent.com/ArantesJoao/wild.io/main/.github/wild-io-banner.png"
-            technologies={['react-native', 'nodejs']}
+            gitHubUrl="https://github.com/ArantesJoao/portfolio"
+            liveDemoUrl="https://rent-website-clone-arantes.vercel.app"
           />
         </div>
       </div>

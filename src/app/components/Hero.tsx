@@ -21,13 +21,28 @@ const Hero = () => {
 
   return (
     <Container>
-      <div id="hero" className="flex flex-col gap-8 items-center">
+      <div
+        id="hero"
+        className="
+          flex
+          flex-col
+          gap-3
+          md:gap-12
+          lg:items-center
+          items-start
+          mt-8
+          lg:mt-0
+          pt-24
+          lg:pt-0"
+      >
         <p
           className={
             `${sora.className}
-            text-h3-sora
+            text-5xl leading-[4rem]
             font-bold
             text-neutral-800
+            text-left
+            lg:text-center
           `}>
           Hi, I'm João Víctor Arantes
         </p>
@@ -37,13 +52,24 @@ const Hero = () => {
           text-h4-sora
           text-purple-900
           font-bold
+          lg:self-center
         `}>
           Full Stack Developer
         </p>
-        <p className="flex text-p-r24 text-neutral-700 text-center max-w-[85%]">
+        <p
+          className="
+            flex
+            text-p-d18
+            md:text-p-r24
+            text-neutral-700
+            lg:text-center
+            max-w-[85%]
+            text-left
+            lg:self-center
+          ">
           Full Stack Developer and (soon-to-be) Information Systems graduate from Federal University of Santa Catarina. Passionate about front-end design and backed by three years of market experience. Creating user experiences that resonate and engage.
         </p>
-        <div className="flex flex-row gap-6" >
+        <div className="flex flex-row gap-6 lg:self-center" >
           <button onClick={onClickGitHub} className="flex-shrink-0">
             <Image
               src="assets/purple_github.svg"
@@ -62,8 +88,14 @@ const Hero = () => {
               priority
             />
           </button>
-          <Button label="GET IN TOUCH" outline />
-          <Button label="RESUME" />
+          <a href="mailto:arantesjoaov@gmail.com">
+            <Button label="GET IN TOUCH" outline />
+          </a>
+          <div className="hidden md:block">
+            <a href="https://drive.google.com/file/d/1QHEB9NqOoV24NOTmHUndr8-uefWjKfn8/view?usp=sharing" target="_blank">
+              <Button label="RESUME" />
+            </a>
+          </div>
         </div>
       </div>
     </Container >

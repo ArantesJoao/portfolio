@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image";
 import {
   SiJavascript,
@@ -20,7 +22,9 @@ interface ProjectCardProps {
   imageUrl: string
   description: string
   technologies: string[]
-  hasLiveDemo?: boolean
+  hasLiveDemo?: boolean,
+  liveDemoUrl?: string,
+  gitHubUrl: string
 }
 
 const techIcons: { [index: string]: IconType } = {
@@ -39,10 +43,16 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   description,
   technologies,
   imageUrl,
-  hasLiveDemo
+  hasLiveDemo,
+  liveDemoUrl,
+  gitHubUrl
 }) => {
+  const openLink = (link: string | undefined) => {
+    if (link) window.open(link, '_blank')
+  }
+
   return (
-    <div className=" flex flex-col w-[47%] border-[1px] border-neutral-200">
+    <div className=" flex flex-col w-[90%] md:w-[43%] border-[1px] border-neutral-200">
       {/* Image */}
       <div className="relative w-full">
         <Image
@@ -61,7 +71,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
             text-h5-sora
             font-bold
             text-neutral-900
-            mb-4
+            mb-4 whitespace-pre-wrap
           `}>
           {title}
         </div>
@@ -79,15 +89,28 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
         className={`
             my-6 mx-4
             flex
-            flex-row
+            flex-col
+            lg:flex-row
             mt-auto
             gap-2
             text-p-m14
             bottom-0
-            ${hasLiveDemo ? 'max-w-[50%]' : 'max-w-[25%]'}
+            max-w-full
+            lg:max-w-[50%]
+            ${hasLiveDemo && 'lg:max-w-[50%]'}
           `}>
-        <Button label="VIEW CODE" />
-        {hasLiveDemo && <Button label="LIVE DEMO" outline />}
+        <Button
+          onClick={() => openLink(gitHubUrl)}
+          label="VIEW CODE"
+        />
+
+        {hasLiveDemo &&
+          <Button
+            onClick={() => openLink(liveDemoUrl)}
+            label="LIVE DEMO"
+            outline
+          />
+        }
       </div>
     </div>
   );
