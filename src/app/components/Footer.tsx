@@ -25,10 +25,9 @@ const Footer = () => {
           flex
           flex-col
           gap-6
-          2xl:gap-0
-          2xl:flex-row
-          justify-between
-          2xl:items-center
+          xl:gap-0
+          xl:flex-row
+          xl:items-center
           w-full
         ">
         <div>
@@ -44,13 +43,13 @@ const Footer = () => {
             flex
             flex-col
             gap-6
-            justify-between
-            items-start
-            2xl:gap-0
-            2xl:flex-row w-full "
-        >
+            xl:gap-0
+            xl:flex-row
+            w-full
+            justify-end
+          ">
           <div className="flex flex-row gap-5">
-            <div>
+            <div className="cursor-pointer">
               <Image
                 src="assets/black_github.svg"
                 alt="João Arantes GitHub"
@@ -61,7 +60,7 @@ const Footer = () => {
                   window.open("https://github.com/ArantesJoao", '_blank')}
               />
             </div>
-            <div>
+            <div className="cursor-pointer">
               <Image
                 src="assets/black_linkedin.svg"
                 alt="João Arantes LinkedIn"
