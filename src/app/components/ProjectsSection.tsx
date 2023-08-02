@@ -38,6 +38,16 @@ const ProjectsSession = () => {
           />
 
           <ProjectCard
+            title="Ignite Call"
+            description="Ignite Call allows users to book appointments with each other. These bookings are automatically added to your linked Google Calendar! Project developed on a Rocketseat Bootcamp."
+            imageUrl="https://raw.githubusercontent.com/ArantesJoao/ignite-call/main/.github/app-preview.png"
+            technologies={['react', 'next', 'stitches', 'vercel', 'prisma', 'mysql']}
+            hasLiveDemo
+            gitHubUrl="https://github.com/ArantesJoao/ignite-call"
+            liveDemoUrl="https://ignite-call-psi-peach.vercel.app"
+          />
+
+          <ProjectCard
             title="Portfolio"
             description="My portfolio listed in my portfolio. I'm trying to think of an Inception joke here."
             imageUrl="https://raw.githubusercontent.com/ArantesJoao/portfolio/main/.github/initial_screen.png"

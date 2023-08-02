@@ -8,8 +8,12 @@ import {
   SiTailwindcss,
   SiCsharp,
   SiVercel,
-  SiNodedotjs
+  SiNodedotjs,
+  SiMysql,
+  SiPrisma,
 } from "react-icons/si";
+
+import {RxStitchesLogo} from "react-icons/rx"
 
 import { Sora } from "next/font/google";
 import { IconType } from "react-icons";
@@ -36,6 +40,9 @@ const techIcons: { [index: string]: IconType } = {
   csharp: SiCsharp,
   nodejs: SiNodedotjs,
   vercel: SiVercel,
+  mysql: SiMysql,
+  stitches: RxStitchesLogo,
+  prisma: SiPrisma
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
