@@ -54,7 +54,7 @@ const Hero = () => {
           font-bold
           lg:self-center
         `}>
-          Full Stack Developer
+          Front-End / Full-Stack Developer
         </p>
         <p
           className="
@@ -67,7 +67,7 @@ const Hero = () => {
             text-left
             lg:self-center
           ">
-          Full Stack Developer and Information Systems graduate from Federal University of Santa Catarina. Passionate about front-end design and backed by three years of market experience. Creating user experiences that resonate and engage.
+          Front-End / Full-Stack developer and Information Systems graduate from Federal University of Santa Catarina. Passionate about front-end design and backed by three years of market experience. Creating user experiences that resonate and engage.
         </p>
         <div className="flex flex-row gap-6 lg:self-center" >
           <button onClick={onClickGitHub} className="flex-shrink-0">
