@@ -46,7 +46,7 @@ const Header = () => {
           <HeaderOption title='Home' div='hero' />
           <HeaderOption title='Projects' div='projects' />
           <HeaderOption title='About' div='about-me' />
-          <a href='https://drive.google.com/file/d/1QHEB9NqOoV24NOTmHUndr8-uefWjKfn8/view?usp=sharing' target='_blank' className="">Resume</a>
+          <a href='https://drive.google.com/file/d/1XM_OIHek42MRD52G1R1vleFqPNzORxcx/view?usp=sharing' target='_blank' className="">Resume</a>
         </div>
       </div>
       <div className={`
