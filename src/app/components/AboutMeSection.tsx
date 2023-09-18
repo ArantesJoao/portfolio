@@ -42,7 +42,7 @@ const AboutMeSection = () => {
             text-black
             mb-400
           `}>Hey there!</p>
-            <p className="lg:text-p-r24 text-lg">I'm a full-stack developer with three years of real-world professional experience and a deep love for frontend work. I'm finishing up my Information Systems degree at the Federal University of Santa Catarina in August, a journey that has further honed my coding skills.</p>
+            <p className="lg:text-p-r24 text-lg">I'm a full-stack developer with three years of real-world professional experience and a deep love for frontend work. Besides that, I hold a Information Systems bachelor's degree by the Federal University of Santa Catarina!</p>
             <br />
             <p className="lg:text-p-r24 text-lg">In my professional life, I work with C# on the backend and a variety of JavaScript frameworks on the frontend. But I truly enjoy working with React, Next and Node.js the most. This portfolio, that was developed based on <a className="underline" target="_blank" href="https://www.figma.com/community/file/1257703789860932527">this project I discovered in the Figma community</a> (thank you to whom designed it!), is a showcase of my projects, demonstrating a little bit of what I've learned so far and what I can bring to your team. I'm excited about the future and ready to take on new challenges in web development.</p>
           </div>

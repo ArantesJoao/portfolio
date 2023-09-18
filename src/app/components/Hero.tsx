@@ -67,7 +67,7 @@ const Hero = () => {
             text-left
             lg:self-center
           ">
-          Full Stack Developer and (soon-to-be) Information Systems graduate from Federal University of Santa Catarina. Passionate about front-end design and backed by three years of market experience. Creating user experiences that resonate and engage.
+          Full Stack Developer and Information Systems graduate from Federal University of Santa Catarina. Passionate about front-end design and backed by three years of market experience. Creating user experiences that resonate and engage.
         </p>
         <div className="flex flex-row gap-6 lg:self-center" >
           <button onClick={onClickGitHub} className="flex-shrink-0">
@@ -92,7 +92,7 @@ const Hero = () => {
             <Button label="GET IN TOUCH" outline />
           </a>
           <div className="hidden md:block">
-            <a href="https://drive.google.com/file/d/1QHEB9NqOoV24NOTmHUndr8-uefWjKfn8/view?usp=sharing" target="_blank">
+            <a href="https://drive.google.com/file/d/1XM_OIHek42MRD52G1R1vleFqPNzORxcx/view?usp=sharing" target="_blank">
               <Button label="RESUME" />
             </a>
           </div>
