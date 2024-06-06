@@ -21,7 +21,7 @@ const ProjectsSession = () => {
                 <div className="flex flex-row flex-wrap gap-16 justify-center">
                     <ProjectCard
                         title="Genius"
-                        description="This is an AI SaaS application using OpenAI and Replicate. It is fully functional, you can go ahead, create your own account through Clerk and even signup to the Pro plan via Stripe to test everything! (don't worry, you won't be charged, it's o test mode!)."
+                        description="This is an AI SaaS application using OpenAI and Replicate. It is fully functional, you can go ahead, create your own account through Clerk and even signup to the Pro plan via Stripe to test everything! (don't worry, you won't be charged, Stripe is on test mode!)."
                         imageUrl="/assets/genius_landing_page.png"
                         technologies={['react', 'next', 'tailwind', 'stripe', 'shadcn', 'clerk', 'vercel']}
                         hasLiveDemo
