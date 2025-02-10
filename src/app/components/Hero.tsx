@@ -92,7 +92,7 @@ const Hero = () => {
                         <Button label="GET IN TOUCH" outline />
                     </a>
                     <div className="hidden md:block">
-                        <a href="https://drive.google.com/file/d/1bwN3ncxbOzRexldfR6H3wZeYGqu5MLAS/view?usp=sharing" target="_blank">
+                        <a href="https://drive.google.com/file/d/1RpcYfjADBWC3eCHcz3dMvJEkCtvwM91j/view?usp=sharing" target="_blank">
                             <Button label="RESUME" />
                         </a>
                     </div>
